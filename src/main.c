@@ -295,7 +295,7 @@ int main(int argc, char *argv[])
 				empty_cells(P,ip);				
 				H_x = voigt(HList, P[ip].xp);
 	
-				if isnan(H_x) 
+				if(isnan(H_x)) 
 					printf("H_x is nan\n");
 
 //				H_x = 0.;     // H_x disables H scattering. 
@@ -537,7 +537,7 @@ escape:
 		}
 #endif
 
-	printf("%ld %f\n",ip,xp);
+		//printf("%ld %f\n",ip,xp);
 
 
 	}
